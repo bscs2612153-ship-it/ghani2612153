@@ -1,0 +1,18 @@
+body{
+    height: 100vh;
+}
+.parent{
+    width: 150px;
+    height: 100%;
+    border-right: 2px solid black;
+    
+}
+.child1{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+ul{
+    margin-right: 50px;
+}

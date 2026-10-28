@@ -1,0 +1,54 @@
+body{
+ height: 100vh;   
+ width: 100%;
+ background-color: aqua;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.parent{
+    height: 500px;
+    width: 350px;
+    background-color:aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 15px;
+}
+.child1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.child2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+p{
+    margin-left: 5px;
+}
+.child{
+    border-radius: 50%;
+}
+.fa-xmark:hover{
+   color: rgb(255, 0, 0); 
+}
+button:hover{
+    background-color: brown;
+    transition: 0.5s ease-in;
+}
+#close{
+    display: none;
+}
+.fa-xmark:has(#close:checked).parent{
+    display: none;
+}
+.fa-xmark:has(#close:checked)#close{
+    display: block;
+}
